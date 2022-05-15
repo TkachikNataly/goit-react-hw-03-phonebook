@@ -9,20 +9,20 @@ class Form extends Component {
         number: '',
     };
 
+    handleSubmit = e => {
+        e.preventDefault();
+
+        this.props.onFormSubmit(this.state);
+        this.resetForm();
+    };
+
     handleChange = e => {
         const { name, value } = e.currentTarget;
         this.setState({ [name]: value });
     };
 
-    handleSubmit = e => {
-        e.preventDefault();
-
-        this.props.onSubmit(this.state);
-        this.resetForm();
-    };
-
     resetForm = () => {
-        this.setState({ name: '', number: '' });
+        this.setState({ contacts: [], name: '', number: '' });
     };
 
     render = () => {

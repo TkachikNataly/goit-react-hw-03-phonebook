@@ -49,7 +49,7 @@ class App extends Component {
   changeFilter = e => {
     this.setState({ filter: e.currentTarget.value })
   }
-  getVisibleContact = e => {
+  getVisibleContact = () => {
     const { filter, contacts } = this.state;
     const normalizedFilter = filter.toLowerCase();
     return contacts.filter(contact =>

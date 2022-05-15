@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     margin: 0 auto;
     width: 270px;
 }
 
 .title {
+    font-size: 24px;
     text-transform: capitalize;
     display: flex;
     flex-direction: column;
@@ -18,7 +19,7 @@
 
 .button {
     text-transform: capitalize;
-    background-color: rgba(246, 8, 8, 0.932);
+    background-color: lightgrey;
     color: rgb(4, 4, 5);
     padding: 10px;
     border: none;
@@ -32,5 +33,5 @@
 }
 
 .input {
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
